@@ -9,7 +9,7 @@ const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-     axios.post('https://cryptic-ravine-18328.herokuapp.com/addProduct', data)
+     axios.post('https://calm-tundra-53009.herokuapp.com/addProduct', data)
          .then(res => {
             if (res.data.insertedId) {
                  alert('added successfully');

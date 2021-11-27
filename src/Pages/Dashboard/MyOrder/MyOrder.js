@@ -6,7 +6,7 @@ const MyOrder = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch(`https://cryptic-ravine-18328.herokuapp.com/booking/?email=${user.email}`)
+    fetch(`https://calm-tundra-53009.herokuapp.com/booking/?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, [user.email]);
@@ -14,7 +14,7 @@ const MyOrder = () => {
   const handleDelete = (id) => {
     const confirmation = window.confirm("Do you want to delete?");
     if (confirmation) {
-      const url = `https://cryptic-ravine-18328.herokuapp.com/booking/${id}`;
+      const url = `https://calm-tundra-53009.herokuapp.com/booking/${id}`;
       fetch(url, {
         method: "DELETE",
       })

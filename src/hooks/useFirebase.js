@@ -117,7 +117,7 @@ const useFirebase = () => {
   //
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch("https://cryptic-ravine-18328.herokuapp.com/users", {
+    fetch("https://calm-tundra-53009.herokuapp.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",
@@ -128,7 +128,7 @@ const useFirebase = () => {
 
   //admin check
   useEffect(() => {
-    fetch(`https://cryptic-ravine-18328.herokuapp.com/users/${user.email}`)
+    fetch(`https://calm-tundra-53009.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

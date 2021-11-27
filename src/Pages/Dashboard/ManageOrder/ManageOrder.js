@@ -6,7 +6,7 @@ const ManageOrder = () => {
   const [orders, setOrders] = useState([]);
   const [updated, setUpdated] = useState(false);
   useEffect(() => {
-    fetch("https://cryptic-ravine-18328.herokuapp.com/allbooking")
+    fetch("https://calm-tundra-53009.herokuapp.com/allbooking")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [updated]);
@@ -14,7 +14,7 @@ const ManageOrder = () => {
   const handleDelete = (id) => {
     const confirmation = window.confirm("Do you want to delete?");
     if (confirmation) {
-      const url = `https://cryptic-ravine-18328.herokuapp.com/booking/${id}`;
+      const url = `https://calm-tundra-53009.herokuapp.com/booking/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -29,7 +29,7 @@ const ManageOrder = () => {
   };
   const handleUpdate = (id) => {
     axios
-      .put(`https://cryptic-ravine-18328.herokuapp.com/booking/${id}`, { id })
+      .put(`https://calm-tundra-53009.herokuapp.com/booking/${id}`, { id })
       .then(function (response) {
         // console.log(response.data);
         if (response.data.modifiedCount) {

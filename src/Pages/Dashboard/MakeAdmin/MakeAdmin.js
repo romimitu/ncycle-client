@@ -18,7 +18,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://cryptic-ravine-18328.herokuapp.com/users/admin", {
+    fetch("https://calm-tundra-53009.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

@@ -18,7 +18,7 @@ const Purchase = () => {
   const onSubmit = (data) => {
     const order = { users: data, product: info, status: "pending" };
     axios
-      .post("https://cryptic-ravine-18328.herokuapp.com/addOrder", order)
+      .post("https://calm-tundra-53009.herokuapp.com/addOrder", order)
       .then(function (response) {
         if (response.data.insertedId) {
           alert("added successfully");
@@ -28,7 +28,7 @@ const Purchase = () => {
   };
 
   useEffect(() => {
-    axios.get(`https://cryptic-ravine-18328.herokuapp.com/products/${id}`).then(function (response) {
+    axios.get(`https://calm-tundra-53009.herokuapp.com/products/${id}`).then(function (response) {
       setInfo(response.data);
     });
   }, [setInfo, id]);

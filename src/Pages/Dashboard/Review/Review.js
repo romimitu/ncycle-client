@@ -11,7 +11,7 @@ const Review = () => {
     const { user } = useAuth();
     const onSubmit = (data) => {
         console.log(data);
-         axios.post('https://cryptic-ravine-18328.herokuapp.com/addReview', data)
+         axios.post('https://calm-tundra-53009.herokuapp.com/addReview', data)
              .then(res => {
                 if (res.data.insertedId) {
                      alert('added successfully');

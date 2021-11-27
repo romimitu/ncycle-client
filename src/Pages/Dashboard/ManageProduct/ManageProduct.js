@@ -6,7 +6,7 @@ const ManageProduct = () => {
   const [products, setProducts] = useState([]);
   const [updated, setUpdated] = useState(false);
   useEffect(() => {
-    fetch("https://cryptic-ravine-18328.herokuapp.com/products")
+    fetch("https://calm-tundra-53009.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [updated]);
@@ -14,7 +14,7 @@ const ManageProduct = () => {
   const handleDelete = (id) => {
     const confirmation = window.confirm("Do you want to delete?");
     if (confirmation) {
-      const url = `https://cryptic-ravine-18328.herokuapp.com/products/${id}`;
+      const url = `https://calm-tundra-53009.herokuapp.com/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })
