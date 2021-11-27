@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Shalimar&family=Yuji+Syuku&display=swap');
+.footer {
+  
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+    color:#3f51b5;
+    font-family: 'Yuji Syuku', serif;
+  }
+  
+  .footer p > span {
+    color: #3f51b5;
+  }
+  
+  .footer input {
+    border: none;
+  }
+  
+  .footer input::placeholder {
+    color: white;
+  }
+  
+  .footer .input-group .input-group-text {
+    background:linear-gradient(to bottom, #3f51b5, #2196f3);
+    border: none;
+  }
+  

@@ -1,0 +1,73 @@
+.covered {
+    width: 100%;
+    height: 55vmin;
+    background: url("../../../images/b.jpg");
+    /* background-position: rem 130rem; */
+    background-size: 100%;
+    position: relative;
+  }
+  
+  .covered .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  
+  .covered .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(107, 104, 104, 0.466);
+    padding-top: 19vmin;
+  }
+  
+  .covered .content > h1 {
+    font-size: 6vmin;
+    color: whitesmoke; 
+  }
+  
+  .covered .content > p {
+    font-size: 2vmin;
+    color: #e5e5e5;
+  }
+  
+  .numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 10rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px #ffafbd;;
+  }
+  
+  .numbers {
+    margin-top: -15vmin;
+  }
+  
+  .numbers .rect h1 {
+    font-size: 5rem;
+    color:black;
+  }
+  .numbers .rect .fa-icon{
+      color: hsla(325, 78%, 55%, 0.712)
+  }
+
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+  .covered {
+    width: 100%;
+    height: 75vmin;
+  }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+  .covered {
+    width: 100%;
+    height: 75vmin;
+  }
+}

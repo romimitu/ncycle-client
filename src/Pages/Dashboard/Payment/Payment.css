@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inconsolata:wght@200&family=Noto+Serif&display=swap');
+ 
+.dashboard a{
+    text-decoration: none;
+    color:rgb(247, 241, 241);
+    font-weight: 600;
+    font-size:22px;
+    letter-spacing:1px;
+    padding-bottom: 20px;
+}
+.dashboard span{
+    color:white;
+}
+.d_icon{
+    color:white;
+    padding-left:10px;
+}
+.dashboard-bg{
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    
+    align-items: center;
+    
+}
+/* .dashboard-header{
+    font-family: 'Inconsolata', monospace;
+    letter-spacing:3px;
+    font-weight: 900;
+    
+} */
+.dashboard-header1{
+    font-family: 'Inconsolata', monospace;
+    letter-spacing:4px;
+    font-weight: 900;
+    font-size: 30px;
+}
+  
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }

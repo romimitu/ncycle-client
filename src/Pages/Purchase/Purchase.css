@@ -1,0 +1,19 @@
+.service-info{
+    margin-top:80px;
+    margin-bottom: 30px;
+}
+.service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service form input {
+    width: 80%;
+    margin-bottom: 8px;
+    border:1px solid #30336b;
+    
+  }
+  
+  
